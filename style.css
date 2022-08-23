@@ -22,9 +22,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 3px;
+    padding: 5px;
     background: rgba(125, 125, 125, 0.589);
-    border: 1px solid black;
+    border: none;
     border-radius: 40px 40px;
 }
 .header{
@@ -144,7 +144,7 @@
     transition: all .5s;
 }
 .skills .language:hover{
-    transform: scale(1.05,1.05);
+ transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
 }
 
 .skills .tools{
@@ -164,7 +164,7 @@
     transition: all .5s;
 }
 .skills .tools:hover{
-    transform: scale(1.05,1.05);
+    transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
 }
 
 .skills .learning{
@@ -182,7 +182,7 @@
     transition: all .5s;
 }
 .skills .learning:hover{
-    transform: scale(1.05,1.05);
+    transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
 }
 
 /* styling projects */
