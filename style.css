@@ -1,13 +1,41 @@
+.heading{
+    align-self: center;
+}
+.know-more{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px 20px;
+    background: darkgray;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    transition: all .3s;
+}
+.know-more:hover{
+    background: rgb(126, 126, 126);
+    transform: scale(1.03,1.03);
+}
+
 /* styling top navbar */
-.header{
-    top: 5;
-    position: sticky;
+.navbar{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background: rgba(125, 125, 125, 0.589);
+    border: 1px solid black;
+    border-radius: 40px 40px;
+}
+.header{
+    /* margin-top: .5%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.589);
-    border-radius: 10px 10px;
-    
+    border-radius: 30px 30px;
 }
 .header .nav-items{
     text-decoration: none;
@@ -17,7 +45,7 @@
     color: white;
 }
 
-.header .download-btn{
+/* .header .download-btn{
     position: absolute;
     right: 0;
     margin-top: 5px;
@@ -32,14 +60,15 @@
     animation: all .5s;
 }
 .header .download-btn:hover{
-    /* border: 1px solid transparent;
-    border-radius: 5px 5px; */
+    border: 1px solid transparent;
+    border-radius: 5px 5px;
     background: black;
     color: white;
-}
+} */
 
 /* styling greeting section */
 .greet{
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -73,6 +102,7 @@
     box-shadow: rgba(128, 128, 128, 0.664) -10px 10px 30px;
     border-radius: 20px 20px;
 
+    
     font-size: larger;
     color: darkslategrey;
     font-weight: bold;
@@ -81,18 +111,19 @@
 /* styling skill section */
 .main-skill-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+
 .skills{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -100,35 +131,125 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     margin-right: 100px;
     margin-left: 100px;
     list-style: none;
-
+    background: white;
+    padding: 20px 20px;
+    border: 2px solid rgba(128, 128, 128, 0.66);
+    border-radius: 20px 20px;
+    box-shadow: grey 10px 10px 40px;
+    transition: all .5s;
+}
+.skills .language:hover{
+    transform: scale(1.05,1.05);
 }
 
 .skills .tools{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     margin-right: 100px;
     margin-left: 100px;
     list-style: none;
-
+    padding: 20px 20px;
+    padding: 20px 20px;
+    border: 2px solid rgba(128, 128, 128, 0.66);
+    border-radius: 20px 20px;
+    box-shadow: grey 10px 10px 40px;
+    transition: all .5s;
+}
+.skills .tools:hover{
+    transform: scale(1.05,1.05);
 }
 
 .skills .learning{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     margin-right: 100px;
     margin-left: 100px;
     list-style: none;
-
+    padding: 20px 20px;
+    border: 2px solid rgba(128, 128, 128, 0.66);
+    border-radius: 20px 20px;box-shadow: grey 10px 10px 40px;
+    transition: all .5s;
+}
+.skills .learning:hover{
+    transform: scale(1.05,1.05);
 }
 
+/* styling projects */
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.project .project-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project-container .project-item{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: px solid grey;
+    box-shadow:grey -10px -10 px 30px ;
+}
+
+
+/* styling trainings */
+.train{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.train .train-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.train .train-container .train-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact section */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+.footer{
+    /* position: absolute;
+    bottom: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
