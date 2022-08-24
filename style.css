@@ -1,13 +1,16 @@
 :root{
     --crimson:crimson;
     --yellow:rgb(255,196,0);
-    --orange:rgba(255, 110, 70, 0.886);
+    --orange:rgb(255, 61, 17);
     --red:rgb(147,6,62);
     --purple:rgb(91,22,71);
     --darkgrey:rgb(66, 66, 66);
     --lightgrey:rgba(252, 252, 252, 0.884);
-
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background: var(--darkgrey);
@@ -29,12 +32,12 @@ body{
 
 .heading{
     font-family: 'Courier New', Courier, monospace;
-    font-size: x-large;
+    font-size:x-large;
     font-weight: bold;
     letter-spacing: .8px;
     padding: 5px 15px;
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+    color: var(--orange);
+    border: 2.5px solid var(--orange);
     border-radius: 10px 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -59,8 +62,6 @@ body{
 
 /* styling top navbar */
 .navbar{
-    position: sticky;
-    top: 0;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
@@ -202,7 +203,7 @@ body{
     padding: 20px 20px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
-    box-shadow: var(--orange) 2px 2px 30px;
+    box-shadow: var(--yellow) 0 0 10px;
     transition: all .5s;
 }
 .skills .language:hover{
@@ -219,7 +220,7 @@ body{
     padding: 20px 20px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
-    box-shadow: var(--orange) 2px 2px 30px;
+    box-shadow: var(--yellow) 0 0 10px;
     transition: all .5s;
 }
 .skills .tools:hover{
@@ -235,7 +236,7 @@ body{
     padding: 20px 20px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
-    box-shadow: var(--orange) 2px 2px 30px;
+    box-shadow: var(--yellow) 0 0 10px;
     transition: all .5s;
 }
 .skills .learning:hover{
@@ -245,6 +246,15 @@ body{
 /* styling projects */
 .project{
     /* margin-top: 30px; */
+}
+
+.project-img{
+    height: 200px;
+    width: 200px;
+}
+.project-img img{
+    height: 200px;
+    width: 200px;
 }
 
 .project .project-container{
@@ -265,7 +275,7 @@ body{
 
 .project-item:hover{
     transform: scale(1.05,1.05);
-    box-shadow: var(--yellow) 5px 5px 20px;
+    box-shadow: var(--yellow) 0 0 10px;
 }
 
 .p-title{
@@ -284,18 +294,21 @@ body{
 
 /* styling trainings */
 .train{
+    margin-top: 100px;
 }
-
-.train-container{
+table{
+    border-spacing: 40px;
 }
-
-.train-item{
+table tr th{
+    font-weight: bold;
+    color: var(--yellow);
+    border-bottom: 2px solid var(--yellow);
 }
-
+.train-title, .train-role, .train-duration{
+    color: white;
+    font-size: 20px;
+}
 /* contact section */
-.contact{
-
-}
 
 .name-email-input{
     box-sizing: border-box;
@@ -339,10 +352,17 @@ input::placeholder,textarea::placeholder{
     border-radius: 10px 10px;
 }
 .footer i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-size: 20px;
+    margin: 10px 5px;
+    padding: 5px;
     color: var(--lightgrey);
-    margin: 0 5px;
+    border: 2px solid var(--lightgrey);
+    border-radius: 10px 10px;
 }
 .footer i:active{
-    color: red;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
 }

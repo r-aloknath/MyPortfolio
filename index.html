@@ -9,19 +9,19 @@
 </head>
 <body>
     <!-- header nav bar -->
-    <div class="navbar center">
+    <div class="navbar center" id="top">
         <div class="header display-row center">
-            <a href="" class="nav-items">ABOUT</a>
-            <a href="" class="nav-items">SKILLS</a>
-            <a href="" class="nav-items">PROJECTS</a>
-            <a href="" class="nav-items">TRAINING</a>
-            <a href="" class="nav-items">CONTACT</a>
+            <a href="#about" class="nav-items">ABOUT</a>
+            <a href="#skills" class="nav-items">SKILLS</a>
+            <a href="#projects" class="nav-items">PROJECTS</a>
+            <a href="#experiences" class="nav-items">TRAINING</a>
+            <a href="#contact" class="nav-items">CONTACT</a>
             <!-- <button class="download-btn">CLICK FOR CV</button> -->
-    </div>
+        </div>
     </div>
 
     <!-- greeting section -->
-    <div class="greet display-column">
+    <div class="greet display-column" id="about">
         <p class="greet-msg center display-column">
             <span class="salutation">Hi!</span>
             <div class="intro display-row center">
@@ -50,7 +50,7 @@
     </div>
 
     <!-- skills section -->
-    <div class="main-skill-section center display-column">
+    <div class="main-skill-section center display-column" id="skills">
         <h3 class="heading">SKILLS</h3>
         <div class="skills display-row center">
             <!-- languages known -->
@@ -70,6 +70,9 @@
                 <li class="skill-item tools-item">VS Code</li>
                 <li class="skill-item tools-item">Netbeans IDE</li>
                 <li class="skill-item tools-item">Postman</li>
+                <li class="skill-item tools-item">MySQL</li>
+                <li class="skill-item tools-item">HeidiSQL</li>
+                <li class="skill-item tools-item">GIT</li>
             </ul>
     
             <!-- skills that i'm learing -->
@@ -83,46 +86,69 @@
     </div>
 
     <!-- projects section -->
-    <div class="project center display-column">
+    <div class="project center display-column" id="projects">
         <h3 class="heading">PROJECTS</h3>
         <div class="project-container display-row center">
             <div class="project-item p-one center display-column">
                 <h3 class="p-title">Hostel Mgmt System</h3>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed magni porro molestiae est asperiores sit minima eos tempora? Mollitia dignissimos, enim, architecto vitae expedita inventore repellendus quaerat excepturi voluptas accusamus ab rerum quidem corporis obcaecati maiores fugit tempora culpa.</p>
+                <div class="project-img">
+                    <img src="resources/sample.jpg" alt="">
+                </div>
+                <p class="desc">A project developed to automate the hostel admission alog with inmate data management</p>
                 <a href="pages/p1/p1.html" target="_blank"><button class="know-more">Know More</button></a>
             </div>
             <div class="project-item p-two center display-column">
                 <h3 class="p-title">Chatbot for Institution</h3>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed magni porro molestiae est asperiores sit minima eos tempora? Mollitia dignissimos, enim, architecto vitae expedita inventore repellendus quaerat excepturi voluptas accusamus ab rerum quidem corporis obcaecati maiores fugit tempora culpa.</p>
+                <div class="project-img">
+                    <img src="resources/sample.jpg" alt="">
+                </div>
+                <p class="desc">A simple chatbot made to ease the work load on college staffs by automating the FAQ and answer process</p>
                 <a href="pages/p2/p2.html" target="_blank"><button class="know-more">Know More</button></a>
             </div>
             <div class="project-item p-three center display-column">
                 <h3 class="p-title">Weather app</h3>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed magni porro molestiae est asperiores sit minima eos tempora? Mollitia dignissimos, enim, architecto vitae expedita inventore repellendus quaerat excepturi voluptas accusamus ab rerum quidem corporis obcaecati maiores fugit tempora culpa.</p>
+                <div class="project-img">
+                    <img src="resources/sample.jpg" alt="">
+                </div>
+                <p class="desc">A weather app to show live data of entered location using open weather API to bypass the backend hustle</p>
                 <a href="pages/p3/p3.html" target="_blank"><button class="know-more">Know More</button></a>
             </div>
             <div class="project-item p-four center display-column">
                 <h3 class="p-title">Site for Tution:ongoing</h3>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed magni porro molestiae est asperiores sit minima eos tempora? Mollitia dignissimos, enim, architecto vitae expedita inventore repellendus quaerat excepturi voluptas accusamus ab rerum quidem corporis obcaecati maiores fugit tempora culpa.</p>
+                <div class="project-img">
+                    <img src="resources/sample.jpg" alt="">
+                </div>
+                <p class="desc">Tution website using angular to show case tution centers portfolio and accessing alumni list</p>
                 <a href="pages/p3/p4.html" target="_blank"><button class="know-more">Know More</button></a>
             </div>
         </div>
     </div>
 
     <!-- training and experience section -->
-    <div class="train center display-column">
+    <div class="train center display-column" id="experiences">
         <h3 class="heading">TRAINING & EXPERIENCES</h3>
         <div class="train-container display-row center">
             <div class="train-item center display-column">
-                <p class="train-title">Software Developer Intern</p>
-                <p class="train-role">Frontend Design and Development</p>
-                <p class="train-duration">I have been working as intern for 6 months</p>
+                <div class="exp-table">
+                    <table>
+                        <tr>
+                            <th>POSITION</th>
+                            <th>RESPONSIBILITES</th>
+                            <th>WORK DURATION</th>
+                        </tr>
+                        <tr>
+                            <td><p class="train-title">Software Developer Intern</p></td>
+                            <td><p class="train-role">Frontend Design and Development</p></td>
+                            <td><p class="train-duration">I have been working as intern for 6 months</p></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- contact section -->
-    <div class="contact center display-column">
+    <div class="contact center display-column" id="contact">
         <h3 class="heading">PING ME HERE</h3>
         <div class="name-email-input display-column center">
             <input type="text" class="inp-name" placeholder="write your full name">
@@ -133,7 +159,8 @@
     </div>
 
     <div class="footer display-row center">
-        <p class="footer-text">MADE WITH <i class="fa-solid fa-heart"></i> BY ALOKNATH</p>
+        <p class="footer-text">MADE WITH LOVE BY ALOKNATH</p>
+        <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
     </div>
 
     <!-- javascript -->
