@@ -1,7 +1,7 @@
 :root{
     --crimson:crimson;
     --yellow:rgb(255,196,0);
-    --orange:rgb(255,86,39);
+    --orange:rgba(255, 110, 70, 0.886);
     --red:rgb(147,6,62);
     --purple:rgb(91,22,71);
     --darkgrey:rgb(66, 66, 66);
@@ -10,7 +10,7 @@
 }
 
 body{
-    background: var(--lightgrey);
+    background: var(--darkgrey);
 }
 .display-row{
     display: flex;
@@ -59,16 +59,21 @@ body{
 
 /* styling top navbar */
 .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
     /* background: rgba(125, 125, 125, 0.589); */
-    border: 2px solid var(--crimson);
+    border: 2px solid var(--yellow);
     border-radius: 40px 40px;
 }
 .header{
+    z-index: 10;
+    position: sticky;
     flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.589);
+    background: rgba(0, 0, 0);
     border-radius: 30px 30px;
 }
 .nav-items{
@@ -79,19 +84,19 @@ body{
     font-weight: bold;
     color: white;
     border: 1px solid transparent;
-    border-radius: 5px 5px;
+    border-radius: 15px 15px;
     transition: all .5s;
 }
 
 .nav-items:hover{
     border: 1px solid var(--yellow);
-    border-radius: 8px 8px;
+    border-radius: 15px 15px;
     color: var(--yellow);
 }
 
 /* styling greeting section */
 .greet{
-    margin-top: 3%;
+    margin-top: 2%;
     justify-content: flex-start;
 }
 .greet .greet-msg{
@@ -101,36 +106,67 @@ body{
 .salutation{
     font-size: 30px;
     font-weight: bolder;
-    color: red;
+    color: var(--yellow);
 }
 .im{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--crimson);
+    color: var(--yellow);
 }
 .name{
     font-size: 30px;
     font-weight: bolder;
-    color: var(--purple);
+    color: var(--lightgrey);
     margin-left: 10px;
 }
 
 /* styling about section */
 .about{
+    /* border: 2px solid var(--yellow); */
+    border-radius: 30px 30px 30px 30px;
 }
 
 .about .about-msg{
     width: 85%;
     height: auto;
     padding: 20px;
-    background: white;
-    box-shadow: rgba(128, 128, 128, 0.664) -10px 10px 30px;
+    background: var(--darkgrey);
+    border: 2px solid var(--yellow);
     border-radius: 20px 20px;
 
     
     font-size: larger;
-    color: darkslategrey;
+    color: var(--lightgrey);
     font-weight: bold;
+}
+
+.overlay{
+    position: absolute;
+    width: 87%;
+    height: 22%;
+    background: rgb(0, 0, 0, .8);
+    color: var(--yellow);
+    opacity: 0;
+    transition: opacity .25s;
+    border-radius: 30px 30px;
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: .5px;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.icon{
+    font-size: 30px;
+    color: var(--yellow);
+    margin: 10px 0 10px;
+    padding: 0 6px;
+    transition:all .5s ;
+}
+
+.icon:hover{
+    color: var(--orange);
 }
 
 /* styling skill section */
@@ -164,13 +200,13 @@ body{
     list-style: none;
     background: var(--darkgrey);
     padding: 20px 20px;
-    border: 2px solid rgba(128, 128, 128, 0.66);
+    border: 2px solid var(--yellow);
     border-radius: 20px 20px;
-    box-shadow: grey 10px 10px 40px;
+    box-shadow: var(--orange) 2px 2px 30px;
     transition: all .5s;
 }
 .skills .language:hover{
- transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
+ transform:scale(1.05,1.05);
 }
 
 .skills .tools{
@@ -181,13 +217,13 @@ body{
     background: var(--darkgrey);
     padding: 20px 20px;
     padding: 20px 20px;
-    border: 2px solid rgba(128, 128, 128, 0.66);
+    border: 2px solid var(--yellow);
     border-radius: 20px 20px;
-    box-shadow: grey 10px 10px 40px;
+    box-shadow: var(--orange) 2px 2px 30px;
     transition: all .5s;
 }
 .skills .tools:hover{
-    transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
+    transform:scale(1.05,1.05) ;
 }
 
 .skills .learning{
@@ -197,12 +233,13 @@ body{
     list-style: none;
     background: var(--darkgrey);
     padding: 20px 20px;
-    border: 2px solid rgba(128, 128, 128, 0.66);
-    border-radius: 20px 20px;box-shadow: grey 10px 10px 40px;
+    border: 2px solid var(--yellow);
+    border-radius: 20px 20px;
+    box-shadow: var(--orange) 2px 2px 30px;
     transition: all .5s;
 }
 .skills .learning:hover{
-    transform:scale(1.05,1.05) rotateX(20deg) rotateY(10deg) ;
+    transform:scale(1.05,1.05) ;
 }
 
 /* styling projects */
@@ -249,10 +286,10 @@ body{
 .train{
 }
 
-.train .train-container{
+.train-container{
 }
 
-.train .train-container .train-item{
+.train-item{
 }
 
 /* contact section */
@@ -260,6 +297,52 @@ body{
 
 }
 
+.name-email-input{
+    box-sizing: border-box;
+    width: 200px;
+}
+.inp-name,.inp-email,.text-area{
+    width: 600px;
+    height: 30px;
+    background: var(--darkgrey);
+    border: 2px solid var(--yellow);
+    color: var(--lightgrey);
+    border-radius: 20px 20px;
+    margin: 10px 0;
+}
+.text-area{
+    height: 100px;
+}
+input::placeholder,textarea::placeholder{
+    margin: 0 0 0 3px;
+    color: var(--lightgrey);
+}
+
+
+.inp-name{
+
+}
+
 /* footer */
 .footer{
+    bottom: 0;
+    position: sticky;
+    margin-bottom: -20px;
+}
+.footer-text{
+    font-size: 15px;
+    letter-spacing: .6px;
+    background: var(--darkgrey);
+    color: var(--yellow);
+    padding: 5px 50px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px 10px;
+}
+.footer i{
+    font-size: 20px;
+    color: var(--lightgrey);
+    margin: 0 5px;
+}
+.footer i:active{
+    color: red;
 }
