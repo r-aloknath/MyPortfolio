@@ -21,16 +21,15 @@
     </div>
 
     <!-- greeting section -->
-    <div class="greet display-column" id="about">
+    <div class="greet display-column" id="about" style="height: 100vh;">
         <p class="greet-msg center display-column">
             <span class="salutation">Hi!</span>
             <div class="intro display-row center">
                 <span class="im">I am</span><span class="name">ALOKNATH RATH</span>
             </div>
         </p>
-    </div>
 
-    <!-- About section -->
+        <!-- About section -->
     <div class="about center display-column">
         <p class="about-msg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque similique numquam consequatur corporis ducimus nemo maxime mollitia illum, vero repellendus! Eos molestias aliquam facilis perferendis eius dolore voluptates quod vero temporibus itaque, corporis qui odit fuga beatae harum voluptas doloribus odio. Impedit ipsa illo accusantium alias consectetur sunt perferendis ut? know me better by clicking 
@@ -48,9 +47,11 @@
            </div>
         </div>
     </div>
+    </div>
+
 
     <!-- skills section -->
-    <div class="main-skill-section center display-column" id="skills">
+    <div class="main-skill-section center display-column" id="skills" style="height: 100vh;">
         <h3 class="heading">SKILLS</h3>
         <div class="skills display-row center">
             <!-- languages known -->
@@ -86,7 +87,7 @@
     </div>
 
     <!-- projects section -->
-    <div class="project center display-column" id="projects">
+    <div class="project center display-column" id="projects" style="height: 100vh;">
         <h3 class="heading">PROJECTS</h3>
         <div class="project-container display-row center">
             <div class="project-item p-one center display-column">
@@ -125,7 +126,7 @@
     </div>
 
     <!-- training and experience section -->
-    <div class="train center display-column" id="experiences">
+    <div class="train center display-column" id="experiences" style="height: 100vh;">
         <h3 class="heading">TRAINING & EXPERIENCES</h3>
         <div class="train-container display-row center">
             <div class="train-item center display-column">
@@ -148,13 +149,26 @@
     </div>
 
     <!-- contact section -->
-    <div class="contact center display-column" id="contact">
+    <div class="contact center display-column" id="contact" style="height: 100vh;">
         <h3 class="heading">PING ME HERE</h3>
-        <div class="name-email-input display-column center">
-            <input type="text" class="inp-name" placeholder="write your full name">
-            <input type="email" class="inp-email" placeholder="email@example.com">
-            <textarea class="text-area" name="" id="" cols="40" rows="8" placeholder="start writing....."></textarea>
-            <button class="know-more">SEND TO ALOK</button>
+        <div class="name-email-input display-column center" >
+            <div class="inp-container display-column">
+                <input type="text" class="inp-name" id="name" placeholder="write your full name">
+                <p class="error-msg" id="name-field-error">name error msg</p>
+            </div>
+
+            <div class="inp-container displya-column ">
+                <input type="text" class="inp-mobile" id="mobile" placeholder="10 digit mobile number">
+                <p class="error-msg" id="mobile-field-error">mobile error msg</p>
+            </div>
+
+            <div class="inp-container display-column">
+                <input type="text" class="inp-email" id="email" placeholder="email@example.com">
+                <p class="error-msg" id="email-field-error">email error msg</p>
+            </div>
+
+            <textarea class="text-area" id="text" id="" cols="40" rows="8" placeholder="start writing....."></textarea>
+            <button class="know-more" onclick="onSubmitClick()">SEND TO ALOK</button>
         </div>
     </div>
 

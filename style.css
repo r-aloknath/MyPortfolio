@@ -95,6 +95,13 @@ body{
     color: var(--yellow);
 }
 
+.visible{
+    opacity: 0;
+}
+.not-visible{
+    opacity: 1;
+}
+
 /* styling greeting section */
 .greet{
     margin-top: 2%;
@@ -173,6 +180,7 @@ body{
 /* styling skill section */
 .main-skill-section{
     flex-wrap: wrap;
+    margin-top: -10px;
 }
 
 
@@ -314,14 +322,18 @@ table tr th{
     box-sizing: border-box;
     width: 200px;
 }
-.inp-name,.inp-email,.text-area{
+
+.inp-container p{
+    margin-top: -2px;
+}
+.inp-name,.inp-email,.text-area,.inp-mobile{
     width: 600px;
     height: 30px;
     background: var(--darkgrey);
     border: 2px solid var(--yellow);
     color: var(--lightgrey);
     border-radius: 20px 20px;
-    margin: 10px 0;
+    margin-top: 5px;
 }
 .text-area{
     height: 100px;
