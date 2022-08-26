@@ -154,27 +154,28 @@
         <div class="name-email-input display-column center" >
             <div class="inp-container display-column">
                 <input type="text" class="inp-name" id="name" placeholder="write your full name">
-                <p class="error-msg" id="name-field-error">name error msg</p>
+                <p></p>
             </div>
 
             <div class="inp-container displya-column ">
                 <input type="text" class="inp-mobile" id="mobile" placeholder="10 digit mobile number">
-                <p class="error-msg" id="mobile-field-error">mobile error msg</p>
+                <p class="error-msg" id="mobile-field-error"></p>
             </div>
 
             <div class="inp-container display-column">
                 <input type="text" class="inp-email" id="email" placeholder="email@example.com">
-                <p class="error-msg" id="email-field-error">email error msg</p>
+                <p class="error-msg" id="email-field-error"></p>
             </div>
 
             <textarea class="text-area" id="text" id="" cols="40" rows="8" placeholder="start writing....."></textarea>
+            <p class="error-msg" id="name-field-error"></p>
             <button class="know-more" onclick="onSubmitClick()">SEND TO ALOK</button>
         </div>
     </div>
 
     <div class="footer display-row center">
         <p class="footer-text">MADE WITH LOVE BY ALOKNATH</p>
-        <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
+        <a href="#top" id="to-top" style="display: none;"><i class="fa-solid fa-angles-up"></i></a>
     </div>
 
     <!-- javascript -->

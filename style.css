@@ -60,6 +60,12 @@ body{
     border: 1px solid var(--yellow);
 }
 
+.error-msg{
+    font-size: 15px;
+    letter-spacing: .6px;
+    color: red;
+}
+
 /* styling top navbar */
 .navbar{
     z-index: 10;
@@ -93,13 +99,6 @@ body{
     border: 1px solid var(--yellow);
     border-radius: 15px 15px;
     color: var(--yellow);
-}
-
-.visible{
-    opacity: 0;
-}
-.not-visible{
-    opacity: 1;
 }
 
 /* styling greeting section */
@@ -374,6 +373,8 @@ input::placeholder,textarea::placeholder{
     border: 2px solid var(--lightgrey);
     border-radius: 10px 10px;
 }
+
+
 .footer i:active{
     color: var(--yellow);
     border: 2px solid var(--yellow);
