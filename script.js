@@ -26,6 +26,7 @@ function onSubmitClick() {
   // calling function to validate inputs
   if (validateInputs()) {
     console.log("form is VALID");
+    alert("you message has been successfully sent");
   } else {
     console.log("form is IN VALID");
   }
@@ -119,3 +120,15 @@ function scrollFunction() {
     toTop.style.display = "none";
   }
 }
+
+const sr = ScrollReveal ({
+	distance: '45px',
+	duration: 2700,
+	reset: true
+})
+
+sr.reveal('.greet-msg,.salutation,.intro',{delay:110, origin:'left'})
+sr.reveal('.about',{delay:110, origin:'right'})
+
+sr.reveal('.main-skill-section,.project,.service,.train,.contact',{delay:110, origin:'bottom'})
+

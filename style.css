@@ -133,6 +133,13 @@ body{
     border-radius: 30px 30px 30px 30px;
 }
 
+.briefing{
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 .about .about-msg{
     width: 85%;
     height: auto;
@@ -174,6 +181,7 @@ body{
 
 .icon:hover{
     color: var(--orange);
+    transform:translateY(2px) scale(1.05,1.05) ;
 }
 
 /* styling skill section */
@@ -207,7 +215,7 @@ body{
     margin-left: 100px;
     list-style: none;
     background: var(--darkgrey);
-    padding: 20px 20px;
+    padding: 20px 10px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
     box-shadow: var(--yellow) 0 0 10px;
@@ -223,7 +231,7 @@ body{
     margin-left: 100px;
     list-style: none;
     background: var(--darkgrey);
-    padding: 20px 20px;
+    padding: 20px 10px;
     padding: 20px 20px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
@@ -240,7 +248,7 @@ body{
     margin-left: 100px;
     list-style: none;
     background: var(--darkgrey);
-    padding: 20px 20px;
+    padding: 20px 10px;
     border: 2px solid var(--yellow);
     border-radius: 20px 20px;
     box-shadow: var(--yellow) 0 0 10px;
