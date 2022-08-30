@@ -106,9 +106,6 @@ body{
     margin-top: 2%;
     justify-content: flex-start;
 }
-.greet .greet-msg{
-
-}
 
 .salutation{
     font-size: 30px;
@@ -259,9 +256,6 @@ body{
 }
 
 /* styling projects */
-.project{
-    /* margin-top: 30px; */
-}
 
 .project-img{
     height: 200px;
@@ -348,11 +342,6 @@ table tr th{
 input::placeholder,textarea::placeholder{
     margin: 0 0 0 3px;
     color: var(--lightgrey);
-}
-
-
-.inp-name{
-
 }
 
 /* footer */
